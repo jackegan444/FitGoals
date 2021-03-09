@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".RunningHome">
+
+    <LinearLayout
+        android:id="@+id/pace_calc_linlayout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+
+        <Button
+            android:id="@+id/rhome_log_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/new_run_btext"
+            android:onClick="launchLogARun"/>
+
+        <Button
+            android:id="@+id/rhome_prev_runs_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/previous_runs_btext"
+            android:onClick="launchPrevRuns"/>
+
+        <Button
+            android:id="@+id/rhome_race_predict_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/race_predict_button"
+            android:onClick="launchRacePredict"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pace_calc_linlayout_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/rhome_log_run_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/rhome_log_run_desc"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rhome_prev_runs_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/rhome_prev_runs_desc"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rhome_pace_calc_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/rhome_race_predict_desc"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

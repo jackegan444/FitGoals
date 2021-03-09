@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/run_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RunDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/run_details_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/run_details"
+        tools:targetApi="lollipop" />
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/run_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/run_name_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display_run_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/default_display_run_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_height="1px" android:background="#BDBDBD">
+        <TextView android:layout_span="2" android:layout_height="1px"
+            android:layout_width="fill_parent" android:text="">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/run_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/run_time_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display_run_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/default_display_run_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_height="1px" android:background="#BDBDBD">
+        <TextView android:layout_span="2" android:layout_height="1px"
+            android:layout_width="fill_parent" android:text="">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/run_dist_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/run_dist_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display_run_dist_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/default_display_run_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_height="1px" android:background="#BDBDBD">
+        <TextView android:layout_span="2" android:layout_height="1px"
+            android:layout_width="fill_parent" android:text="">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/run_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/run_date_label"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display_run_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/default_display_run_text"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+</TableLayout>

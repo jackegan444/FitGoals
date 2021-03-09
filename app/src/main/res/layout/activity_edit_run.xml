@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRun">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/erun_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/run_name_textviewtxt"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/erun_name_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:ems="10"
+            android:hint="@string/run_name_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/erun_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="76dp"
+            android:gravity="center|start"
+            android:text="@string/run_time_textviewtxt"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_column="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp">
+
+            <NumberPicker
+                android:id="@+id/erun_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ecolon_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/erun_time_hour"
+                android:layout_toRightOf="@+id/erun_time_hour"
+                android:text="@string/colon"
+                android:textSize="20sp" />
+
+            <NumberPicker
+                android:id="@+id/erun_time_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ecolon_textview"
+                android:layout_toRightOf="@+id/ecolon_textview"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ecolon_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/erun_time_min"
+                android:layout_toRightOf="@+id/erun_time_min"
+                android:text="@string/colon"
+                android:textSize="20sp" />
+
+            <NumberPicker
+                android:id="@+id/erun_time_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ecolon_textview2"
+                android:layout_toRightOf="@+id/ecolon_textview2"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/erun_distance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/run_distance_textviewtxt"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/erun_distance_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/run_distance_hint"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:layout_column="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/elog_run_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_run_btext"
+            android:layout_column="1"
+            android:onClick="saveRunInput"/>
+
+
+    </TableRow>
+
+</TableLayout>
